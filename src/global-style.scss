@@ -1,6 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Spectral+SC');
+@import url('https://fonts.googleapis.com/css?family=Questrial');
 
-$blue: #2980b9;
-$lightBlue: #3498db;
-$white: #ecf0f1;
-$gray: #7f8c8d;
+$background: #ebebea;
+
+@mixin flex($flex-direction, $justify-content, $align-items) {
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}

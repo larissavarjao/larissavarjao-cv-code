@@ -1,18 +1,23 @@
-import * as React from "react";
-import { Link } from "react-router-dom";
+import * as React from 'react';
 
-const s = require("./style.scss");
+const Gmail = require('../../assets/img/gmail.svg');
+const Employee = require('../../assets/img/employee.svg');
+
+const s = require('./style.scss');
 
 export default class Header extends React.Component<{}, {}> {
-	public render() {
-		return (
-			<header className={s.header}>
-				<Link to="/" className={s.title}>Boilerplate React/Mobx</Link>
-				<ul className={s.menu}>
-					<li><Link className={s.menuItem} to="/">Home</Link></li>
-					<li><Link className={s.menuItem} to="/about">About</Link></li>
-				</ul>
-			</header>
-		);
-	}
+  public render() {
+    return (
+      <div className={s.container}>
+        <div className={s.name}>
+          <img src={Employee} />
+          <p>Larissa Varjão</p>
+        </div>
+        <div className={s.contact}>
+          <img src={Gmail} />
+          <p>larissasilvavarjao@gmail.com</p>
+        </div>
+      </div>
+    );
+  }
 }
