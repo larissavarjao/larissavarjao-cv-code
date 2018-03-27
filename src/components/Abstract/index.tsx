@@ -1,5 +1,7 @@
 import * as React from 'react';
 
+import Animation from '../Animation';
+
 const s = require('./style.scss');
 const Me = require('../../assets/img/me.png');
 const Business = require('../../assets/img/deal.svg');
@@ -9,11 +11,15 @@ export default class Abstract extends React.Component<{}, {}> {
   public render() {
     return (
       <div className={s.container}>
+        <Animation />
         <div className={s.abstract}>
           <div className={s.call}>
             <img src={Me} />
-            <h1>Front-End Developer</h1>
-            <h2>Salvador, Brazil</h2>
+            <h1>Larissa Varjão</h1>
+            <div className={s.box}>
+              <h2>Front-End Developer</h2>
+              <h3>Salvador, Brazil</h3>
+            </div>
           </div>
           <div className={s.menu}>
             <div className={s.li}>

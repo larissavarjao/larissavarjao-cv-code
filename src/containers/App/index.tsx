@@ -13,7 +13,6 @@ const App = () => (
     <Switch>
       <Route exact path="/" render={() => <Redirect to="/home" />} />
       <Route path="/home" component={Home} />
-      {/* <Route path="/cover" component={Cover} /> */}
     </Switch>
   </React.Fragment>
 );

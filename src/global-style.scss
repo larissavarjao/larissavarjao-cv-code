@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Questrial');
 
 $background: #ebebea;
+$green: #4cb8b4;
+$pink: #ff7477;
+$yellow: #ffcc58;
+$blue: #2797d8;
 
 @mixin flex($flex-direction, $justify-content, $align-items) {
   display: flex;
