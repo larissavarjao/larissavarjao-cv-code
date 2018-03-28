@@ -1,24 +1,18 @@
 {
-  "name": "mobx-react-router4-typescript-sass-boilerplate",
+  "name": "larissa-varjao-cv",
   "version": "1.0.0",
-  "description": "Boilerplate React/Mobx with Router v4, Sass and Typescript",
+  "description": "Larissa Varjão CV",
   "main": "index.tsx",
   "scripts": {
     "dev": "NODE_ENV=development webpack-dev-server --progress --colors --hot",
     "build": "NODE_ENV=production webpack"
   },
   "repository": {
-    "type": "git",
-    "url": "https://github.com/danilomartinelli/mobx-react-router4-typescript-sass-boilerplate.git"
+    "type": "",
+    "url": ""
   },
-  "keywords": [
-    "mobx",
-    "react",
-    "boilerplate",
-    "sass",
-    "typescript"
-  ],
-  "author": "Danilo Martinelli",
+  "keywords": ["mobx", "react", "boilerplate", "sass", "typescript"],
+  "author": "Larissa Varjão",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^9.4.7",
@@ -52,13 +46,11 @@
     "webpack-dev-server": "^3.1.1"
   },
   "dependencies": {
-    "fullpage-react": "^3.0.29",
     "mobx": "^4.1.0",
     "mobx-react": "^5.0.0",
     "mobx-react-router": "^4.0.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-fullpage": "^0.1.18",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2"
   }
