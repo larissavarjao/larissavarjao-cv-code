@@ -11,11 +11,13 @@ export default class Cover extends React.Component<{}, {}> {
         <Header />
         <div className={s.background} />
         <div className={s.coverImg}>
-          <h1>Larissa Varjão</h1>
-          <h2>Front-End Developer</h2>
-          <div className={s.buttons}>
-            <div className={`${s.button} ${s.buttonGreen}`}>Business</div>
-            <div className={`${s.button} ${s.buttonBlack}`}>Developer</div>
+          <div className={s.info}>
+            <h1>Larissa Varjão</h1>
+            <h2>Front-End Developer</h2>
+            <div className={s.buttons}>
+              <div className={`${s.button} ${s.buttonGreen}`}>Business</div>
+              <div className={`${s.button} ${s.buttonBlack}`}>Developer</div>
+            </div>
           </div>
         </div>
       </div>
