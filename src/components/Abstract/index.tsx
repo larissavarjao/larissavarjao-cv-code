@@ -12,7 +12,7 @@ export default class Abstract extends React.Component<IProps, {}> {
           <h1>Education</h1>
           <div className={s.graduate}>
             <h2>Universidade de Salvador (UNIFACS)</h2>
-            <p>Currently on the 3th semester of Information System</p>
+            <p>Currently studying Information System</p>
           </div>
           <div className={s.graduate}>
             <h2>Universidade Federal da Bahia (UFBa)</h2>

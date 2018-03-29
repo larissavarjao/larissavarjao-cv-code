@@ -45,15 +45,12 @@
       .buttons {
         @include flex(row, center, center);
         width: fit-content;
-        // padding: 3px;
         border-radius: 5px;
         background-color: rgba(0, 0, 0, 0.7);
 
         .button {
           margin: 10px;
-          // color: white;
           cursor: pointer;
-          // border-radius: 5px;
           text-transform: uppercase;
           a {
             img {
@@ -78,10 +75,12 @@
         h2 {
           font-size: 1.3rem;
         }
-
-        .button {
-          padding: 10px 20px;
-          font-size: 0.8rem;
+        .buttons {
+          .button {
+            margin: 3px;
+            padding: 10px 20px;
+            font-size: 0.8rem;
+          }
         }
       }
     }
