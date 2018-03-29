@@ -22,44 +22,47 @@
     @include flex(column, center, flex-end);
 
     .info {
+      @include flex(column, center, center);
       transition: 2s;
       margin: 8rem;
-    }
-    h1,
-    h2 {
-      text-align: center;
-      margin: 5px 0;
-      // font-family: inherit !important;
-    }
 
-    h1 {
-      font-weight: 400;
-      font-size: 4rem;
-    }
+      h1,
+      h2 {
+        text-align: center;
+        margin: 5px 0;
+        // font-family: inherit !important;
+      }
 
-    h2 {
-      font-weight: 200;
-      font-size: 2rem;
-    }
+      h1 {
+        font-weight: 400;
+        font-size: 4rem;
+      }
 
-    .buttons {
-      @include flex(row, center, center);
+      h2 {
+        font-weight: 200;
+        font-size: 2rem;
+      }
 
-      .button {
-        padding: 15px 30px;
-        margin: 10px;
-        color: white;
+      .buttons {
+        @include flex(row, center, center);
+        width: fit-content;
+        // padding: 3px;
         border-radius: 5px;
-        cursor: pointer;
-        text-transform: uppercase;
-      }
+        background-color: rgba(0, 0, 0, 0.7);
 
-      .buttonGreen {
-        background-color: $green;
-      }
-
-      .buttonBlack {
-        background-color: rgba(0, 0, 0, 1);
+        .button {
+          margin: 10px;
+          // color: white;
+          cursor: pointer;
+          // border-radius: 5px;
+          text-transform: uppercase;
+          a {
+            img {
+              width: 40px;
+              height: 40px;
+            }
+          }
+        }
       }
     }
   }
