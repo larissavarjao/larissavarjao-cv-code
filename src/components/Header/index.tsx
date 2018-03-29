@@ -4,7 +4,11 @@ const Gmail = require('../../assets/img/gmail.svg');
 
 const s = require('./style.scss');
 
-export default class Header extends React.Component<{}, {}> {
+interface IProps {
+  changeLanguage?: (lang: 'portuguese' | 'english') => void;
+}
+
+export default class Header extends React.Component<IProps, {}> {
   public render() {
     return (
       <div className={s.container}>

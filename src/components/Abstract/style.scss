@@ -1,0 +1,46 @@
+@import 'global-style.scss';
+
+.abstract {
+  width: calc(100% - 40px);
+  padding: 20px;
+  height: 400px;
+  background-color: $light;
+  @include flex(row, space-between, center);
+
+  .left {
+    @include flex(column, center, center);
+    width: 55%;
+    h1 {
+      font-weight: 400;
+      font-size: 3rem;
+      margin: 20px 0;
+    }
+
+    .graduate {
+      h2 {
+        font-size: 1.5rem;
+        font-weight: 300;
+        margin: 10px;
+      }
+      p {
+        text-align: center;
+        color: $coffe;
+        margin: 10px;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .image {
+    width: 40%;
+    height: 100%;
+    background-image: url('./draw-computer.jpg');
+    background-size: cover;
+  }
+}
+
+@media #{$mobile} {
+  .abstract {
+    padding: 80px 0;
+  }
+}

@@ -22,13 +22,14 @@
     @include flex(column, center, flex-end);
 
     .info {
+      transition: 2s;
       margin: 8rem;
     }
     h1,
     h2 {
       text-align: center;
       margin: 5px 0;
-      font-family: inherit !important;
+      // font-family: inherit !important;
     }
 
     h1 {
@@ -59,6 +60,27 @@
 
       .buttonBlack {
         background-color: rgba(0, 0, 0, 1);
+      }
+    }
+  }
+}
+
+@media #{$mobile} {
+  .cover {
+    .coverImg {
+      @include flex(column, center, center);
+      .info {
+        h1 {
+          font-size: 2.4rem;
+        }
+        h2 {
+          font-size: 1.3rem;
+        }
+
+        .button {
+          padding: 10px 20px;
+          font-size: 0.8rem;
+        }
       }
     }
   }
