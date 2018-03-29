@@ -18,7 +18,7 @@ export default class Skills extends React.Component<IProps, {}> {
   public render() {
     return (
       <div className={s.skills}>
-        <h1>Skills</h1>
+        <h1 className={s.title}>Skills</h1>
         <div className={s.cards}>
           {languages.map(lang => {
             return (
