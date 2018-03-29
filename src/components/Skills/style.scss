@@ -1,0 +1,60 @@
+@import 'global-style.scss';
+
+.skills {
+  width: 100%;
+  // height: 100vh;
+  height: 400px;
+  @include flex(column, flex-start, center);
+
+  h1 {
+    margin-top: 20px;
+    font-size: 2rem;
+    font-weight: 300;
+  }
+
+  .cards {
+    width: 100%;
+    height: 80%;
+    @include flex(row, space-around, center);
+    flex-wrap: wrap;
+
+    .card {
+      @include flex(column, center, center);
+      margin: 10px;
+      width: 150px;
+      height: 150px;
+      transition: 1s ease-in-out;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: block;
+      }
+
+      h1 {
+        display: none;
+        color: white;
+        font-size: 1.5rem;
+      }
+
+      &:hover {
+        transition: 0.5s ease-in-out;
+        background: rgba(76, 184, 180, 1);
+
+        h1 {
+          display: block;
+        }
+        img {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media #{$mobile} {
+  .abstract {
+    padding: 80px 0;
+  }
+}

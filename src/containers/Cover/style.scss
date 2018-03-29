@@ -1,7 +1,7 @@
 @import 'global-style.scss';
 
 .cover {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 
   .background {
@@ -30,7 +30,6 @@
       h2 {
         text-align: center;
         margin: 5px 0;
-        // font-family: inherit !important;
       }
 
       h1 {

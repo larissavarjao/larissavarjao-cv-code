@@ -14,6 +14,8 @@ $tablet: '(max-width: 1280px)';
 $screen-xlg: 'screen and (min-width: 1281px)';
 $screen-xxlg: 'screen and (min-width: 1600px)';
 
+$header: 75px;
+
 @mixin flex($flex-direction, $justify-content, $align-items) {
   display: flex;
   flex-direction: $flex-direction;

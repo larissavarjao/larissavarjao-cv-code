@@ -5,6 +5,7 @@ import { match } from 'react-router';
 import Cover from '../Cover';
 import Header from '../../components/Header';
 import Abstract from '../../components/Abstract';
+import Skills from '../../components/Skills';
 
 const s = require('./style.scss');
 
@@ -20,6 +21,7 @@ export default class Home extends React.Component<IProps, {}> {
         <Header />
         <Cover />
         <Abstract />
+        <Skills />
       </div>
     );
   }
