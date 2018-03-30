@@ -1,1 +1,1 @@
-declare module 'fullpage-react';
+declare module 'react-scroll-up-button';

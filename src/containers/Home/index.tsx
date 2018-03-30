@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { observer } from 'mobx-react';
 import { match } from 'react-router';
+import ScrollUpButton from 'react-scroll-up-button';
 
 import Cover from '../../components/Cover';
 import Header from '../../components/Header';
@@ -30,6 +31,7 @@ export default class Home extends React.Component<IProps, {}> {
         <Projects />
         <Contact />
         <Footer />
+        <ScrollUpButton TransitionBtnPosition={500} />
       </div>
     );
   }
