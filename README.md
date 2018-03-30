@@ -4,9 +4,9 @@ This is a website developed by [Larissa Varjão](https://github.com/larissavarja
 
 ## Link to website and projects
 
-[Larissa Varjão CV](https://larissavarjao.github.io/)
-[Mulheres também fazem amor](https://larissavarjao.github.io/mulherestambemfazemamor/)
-[Calculadora de Churrasco](https://calculadoradechurrasco.github.io/)
+* [Larissa Varjão CV](https://larissavarjao.github.io/)
+* [Mulheres também fazem amor](https://larissavarjao.github.io/mulherestambemfazemamor/)
+* [Calculadora de Churrasco](https://calculadoradechurrasco.github.io/)
 
 ## Contact
 
