@@ -11,8 +11,7 @@
     @include flex(column, center, center);
     width: 55%;
     h1 {
-      font-weight: 400;
-      font-size: 3rem;
+      @extend .titleMain;
       margin: 20px 0;
     }
 

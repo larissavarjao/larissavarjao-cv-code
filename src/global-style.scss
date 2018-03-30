@@ -32,3 +32,16 @@ $header: 75px;
   display: block;
   transition: 0.5s ease-in-out;
 }
+
+.titleMain {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+@media #{$mobile} {
+  .titleMain {
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+  }
+}
