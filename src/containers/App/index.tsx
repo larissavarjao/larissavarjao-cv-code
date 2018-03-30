@@ -8,11 +8,9 @@ require('./style.scss');
 
 const App = () => (
   <React.Fragment>
-    {/* <Header /> */}
     <Switch>
-      <Route exact path="/" render={() => <Redirect to="/home" />} />
-      <Route path="/home" component={Home} />
-      {/* <Route path="/home/pt" component={HomePortuguese} /> */}
+      <Route path="/" component={Home} />
+      <Route path="*" render={() => <Redirect to="/" />} />
     </Switch>
   </React.Fragment>
 );
