@@ -10,7 +10,7 @@ This is a website developed by [Larissa Varjão](https://github.com/larissavarja
 
 ## Links of the cv project
 
-* [Link of code in React.JS](https://github.com/larissavarjao/larissavarjao-cv-code)
+* [Link of code in React.JS](https://github.com/larissavarjao/larissavarjao-cv-history)
 * [Link of code builded after webpack](https://github.com/larissavarjao/larissavarjao.github.io)
 * [Link of landing page](https://larissavarjao.github.io/)
 
