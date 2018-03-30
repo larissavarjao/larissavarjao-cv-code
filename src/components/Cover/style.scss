@@ -71,6 +71,7 @@
     }
     .coverImg {
       @include flex(column, center, center);
+      height: 100%;
       .info {
         h1 {
           font-size: 2.4rem;
