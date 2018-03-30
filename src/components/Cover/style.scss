@@ -66,6 +66,9 @@
 
 @media #{$mobile} {
   .cover {
+    .background {
+      opacity: 0.7;
+    }
     .coverImg {
       @include flex(column, center, center);
       .info {

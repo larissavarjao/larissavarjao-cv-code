@@ -78,3 +78,9 @@
     }
   }
 }
+
+@media #{$tablet} {
+  .skills {
+    height: auto;
+  }
+}

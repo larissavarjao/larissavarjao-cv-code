@@ -1,12 +1,20 @@
 @import 'global-style.scss';
 
-.container {
+.header {
   position: fixed;
   height: $header;
   width: 100%;
   z-index: 9999;
-  background-color: rgba(255, 255, 255, 0.5);
-  @include flex(row, flex-end, center);
+  background-color: rgba(255, 255, 255, 0.8);
+  @include flex(row, space-between, center);
+
+  .touch {
+    h3 {
+      margin: 0 0 0 30px;
+      font-weight: 200;
+      font-size: 1.5rem;
+    }
+  }
 
   .contact {
     @include flex(row, space-around, center);
@@ -16,15 +24,21 @@
 
     p {
       margin: 0 30px 0 10px;
-      font-weight: 400;
+      font-weight: 300;
       font-size: 1.3rem;
     }
   }
 }
 
 @media #{$mobile} {
-  .container {
-    @include flex(row, center, center);
+  .header {
+    @include flex(column, space-around, center);
+    .touch {
+      h3 {
+        margin: 0;
+        font-size: 1rem;
+      }
+    }
     .contact {
       img {
         width: 25px;
