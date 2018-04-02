@@ -1,31 +1,24 @@
 sudo: false
 language: node_js
-
 node_js:
-  - '8'
-
-# fail asap when there is a failure
+- '8'
 matrix:
   fast_finish: true
-
-# cache node modules
 cache:
   directories:
-    - node_modules
-
+  - node_modules
 before_install:
-  # remove useless/non listed deps
-  - npm prune
-  # faster npm install
-  - npm set progress=false
-
+- npm prune
+- npm set progress=false
 script: npm run build
-
 deploy:
   provider: pages
   skip-cleanup: true
-  github-token: $GH_TOKEN  # Set in travis-ci.org dashboard, marked secure
+  github-token: "$GH_TOKEN"
   keep-history: true
   local-dir: dist
   on:
     branch: master
+env:
+  global:
+    GH_TOKEN: Y5I5aSTkSquIz5yyGP+HXv0QXKSJTZyJ3aVMzI1fy8XzlMbReEwNxPKQya/ThTnEb08YmOwXNnRfrXhabJ4quBSzifayNkRT2VfxUR0ud3P1lE9XtcMZChFe1KRevbJtnGG4IXph1DmpK63dXbocjub36al8zp5+Y3jDNzzHsjNh8CNtFEmmVT9u5LcMkNsVBLlrc5wOeQIZg/U99gNa7sDOfQAWwsbhKOm47j1VypwIpAQ59P1tbJw9v90GjLhRMch/8E3DLAZUFOBMa3UaE7fkpJMIfdcaczCxzFF+WFg4tYtLizwg5P1UYRQte1qnmSsGxVPrdVtFTdiZV+c7lYQE3wNk66l7Meq0JoS+O+yfZkKOnkN1zxGv34DKUpkUg3l1fmfJu1a1gFyEE10emxHQEe/kOLRikt0iql9Q2BHDg6Xzjwgg2qlpPx3bmVpjf3jZCBIXTYY4MF6r1Rfn1QGC9nGVSMJcToseySvCmG99ygRQd6zl8Jt63NXChGm//8ynooavbQTuc2RDF0gt7wFWklkuNB4i7kbO8OPdFKIc83uuLmpN54qkiTepoxjfS6t9VhBPKMK5OhZBsCwQ1z1aiSqxap/ShniRYu/jf7aLHRb3bSvySFoOSOXrn5wN26ZZsPj+mEcTzLNGLsKcqkQ1AtxB5RkpU83Fpr/WwRk=
