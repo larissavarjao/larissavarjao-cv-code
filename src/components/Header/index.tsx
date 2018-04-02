@@ -13,7 +13,7 @@ export default class Header extends React.Component<IProps, {}> {
     return (
       <div className={s.header}>
         <div className={s.touch}>
-          <h3>Hire me for a freelance project!</h3>
+          <h3>Available to freelancer projects!</h3>
         </div>
         <div className={s.contact}>
           <img src={Gmail} />

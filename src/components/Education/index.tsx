@@ -4,7 +4,7 @@ const s = require('./style.scss');
 
 interface IProps {}
 
-export default class Abstract extends React.Component<IProps, {}> {
+export default class Education extends React.Component<IProps, {}> {
   public render() {
     return (
       <div className={s.abstract}>

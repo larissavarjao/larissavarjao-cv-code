@@ -5,7 +5,7 @@ import ScrollUpButton from 'react-scroll-up-button';
 
 import Cover from '../../components/Cover';
 import Header from '../../components/Header';
-import Abstract from '../../components/Abstract';
+import Education from '../../components/Education';
 import Skills from '../../components/Skills';
 import Experience from '../../components/Experience';
 import Projects from '../../components/Projects';
@@ -25,10 +25,10 @@ export default class Home extends React.Component<IProps, {}> {
       <div className={s.container}>
         <Header />
         <Cover />
-        <Abstract />
+        <Projects />
         <Skills />
         <Experience />
-        <Projects />
+        <Education />
         <Contact />
         <Footer />
         <ScrollUpButton TransitionBtnPosition={500} />

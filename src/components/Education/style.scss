@@ -4,7 +4,6 @@
   width: calc(100% - 40px);
   padding: 20px;
   height: 400px;
-  background-color: $light;
   @include flex(row, space-between, center);
 
   .left {

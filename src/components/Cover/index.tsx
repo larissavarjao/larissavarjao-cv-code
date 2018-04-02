@@ -4,6 +4,7 @@ const s = require('./style.scss');
 const facebook = require('../../assets/img/svgs/facebook.svg');
 const linkedin = require('../../assets/img/svgs/linkedin.svg');
 const github = require('../../assets/img/svgs/github.svg');
+const me = require('../../assets/img/cover/me.png');
 
 interface IProps {
   language?: string;
@@ -16,6 +17,7 @@ export default class Cover extends React.Component<IProps, {}> {
         <div className={s.background} />
         <div className={s.coverImg}>
           <div className={s.info}>
+            <img className={s.me} src={me} />
             <h1>Larissa Varjão</h1>
             <h2>Front-End Developer</h2>
             <div className={s.buttons}>

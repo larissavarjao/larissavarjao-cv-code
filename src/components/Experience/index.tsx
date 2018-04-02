@@ -24,7 +24,7 @@ const companys = [
   {
     name: 'PwC',
     text:
-      'During the period from July 2015 to March 2017 I worked as an assistant in the auditing part of PwC, one of the big four companies.',
+      'During the period from July 2015 to March 2017 I worked as an assistant in the auditing part of PwC, one of four biggest companies of the market.',
     url: pwc
   }
 ];

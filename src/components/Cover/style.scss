@@ -24,7 +24,21 @@
     .info {
       @include flex(column, center, center);
       transition: 2s;
-      margin: 8rem;
+      margin: 0 8rem;
+
+      .me {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 8px solid $green;
+        transition: 2s;
+
+        &:hover {
+          width: 250px;
+          height: 250px;
+          transition: 2s;
+        }
+      }
 
       h1,
       h2 {
