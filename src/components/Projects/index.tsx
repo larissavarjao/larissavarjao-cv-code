@@ -2,7 +2,7 @@ import * as React from 'react';
 
 const s = require('./style.scss');
 const calculadora = require('../../assets/img/projects/calculadora-de-churrasco.jpg');
-const mulheres = require('../../assets/img/projects/mulheres-também-fazem-amor.jpg');
+const mulheres = require('../../assets/img/projects/mtfa.jpg');
 
 interface IProps {}
 
