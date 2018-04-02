@@ -19,7 +19,7 @@ before_install:
   # faster npm install
   - npm set progress=false
 
-script: npm run dev
+script: npm run build
 
 deploy:
   provider: pages
