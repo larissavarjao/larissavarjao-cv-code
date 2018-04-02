@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-const Gmail = require('../../assets/img/gmail.svg');
+const Gmail = require('../../assets/img/header/gmail.svg');
 
 const s = require('./style.scss');
 
