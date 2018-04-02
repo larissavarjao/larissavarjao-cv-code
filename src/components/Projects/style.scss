@@ -72,12 +72,16 @@
       @include flex(column, center, center);
 
       .project {
-        @include flex(row, center, center);
+        @include flex(column, center, center);
+        width: 80%;
 
         img {
           width: 300px;
           height: 200px;
           margin: 10px;
+        }
+        p {
+          padding: 0;
         }
       }
     }
