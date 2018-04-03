@@ -110,13 +110,7 @@ module.exports = {
         process.env.NODE_ENV || 'development'
       )
     }),
-    /*
-            Copy files from src to dist
-        */
-    new CopyWebpackPlugin([{ from: 'src/index.html' }]),
-    /*
-            END
-        */
+    // new CopyWebpackPlugin([{ from: 'src/index.html' }]),
     new HtmlWebpackPlugin({
       template: './src/index.html',
       filename: 'index.html'

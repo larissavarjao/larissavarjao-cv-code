@@ -1,7 +1,6 @@
 image: node
 
 pages:
-  stage: deploy 
   script:
   - npm i
   - npm run build
