@@ -92,12 +92,12 @@ module.exports = {
     extensions: ['.tsx', '.ts', '.js', '.json']
   },
   output: {
-    path: __dirname + '/dist',
+    path: __dirname + '/public',
     publicPath: '/',
     filename: 'bundle.[hash].js'
   },
   devServer: {
-    contentBase: './dist',
+    contentBase: './public',
     compress: true,
     port: PORT,
     historyApiFallback: true,
