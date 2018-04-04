@@ -9,7 +9,7 @@ interface IProps {
   changeLanguage?: (lang: 'portuguese' | 'english') => void;
 }
 
-export default class Footer extends React.Component<IProps, {}> {
+export class Footer extends React.Component<IProps, {}> {
   public render() {
     return (
       <div className={s.footer}>
@@ -40,3 +40,5 @@ export default class Footer extends React.Component<IProps, {}> {
     );
   }
 }
+
+export default Footer;

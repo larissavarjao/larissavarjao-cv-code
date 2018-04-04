@@ -2,21 +2,25 @@ import * as React from 'react';
 
 const s = require('./style.scss');
 
-interface IProps {}
+interface IProps {
+  title: string;
+  ufba: string;
+  unifacs: string;
+}
 
-export default class Education extends React.Component<IProps, {}> {
+export class Education extends React.Component<IProps, {}> {
   public render() {
     return (
       <div className={s.abstract}>
         <div className={s.left}>
-          <h1>Education</h1>
+          <h1>{this.props.title}</h1>
           <div className={s.graduate}>
             <h2>Universidade de Salvador (UNIFACS)</h2>
-            <p>Currently studying Information System</p>
+            <p>{this.props.unifacs}</p>
           </div>
           <div className={s.graduate}>
             <h2>Universidade Federal da Bahia (UFBa)</h2>
-            <p>Graduated in Business Administration</p>
+            <p>{this.props.ufba}</p>
           </div>
         </div>
         <div className={s.image} />
@@ -24,3 +28,5 @@ export default class Education extends React.Component<IProps, {}> {
     );
   }
 }
+
+export default Education;

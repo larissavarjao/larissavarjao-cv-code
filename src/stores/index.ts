@@ -1,1 +1,1 @@
-export { CounterStore } from "./CounterStore";
+export { LanguageStore } from './LanguageStore';

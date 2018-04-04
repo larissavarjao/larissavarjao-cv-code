@@ -87,6 +87,7 @@
       @include flex(column, center, center);
       height: 100%;
       .info {
+        margin: 3rem 8rem 0 8rem;
         h1 {
           font-size: 2.4rem;
         }

@@ -16,6 +16,15 @@
     }
   }
 
+  .icons {
+    img {
+      width: 30px;
+      height: 30px;
+      margin: 0 10px;
+      cursor: pointer;
+    }
+  }
+
   .contact {
     @include flex(row, space-around, center);
     img {
@@ -32,6 +41,8 @@
 
 @media #{$mobile} {
   .header {
+    position: absolute;
+    height: 100px;
     @include flex(column, space-around, center);
     .touch {
       h3 {

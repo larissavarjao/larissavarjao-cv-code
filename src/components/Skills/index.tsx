@@ -20,13 +20,15 @@ const languages = [
   { name: 'Git', url: git }
 ];
 
-interface IProps {}
+interface IProps {
+  title: string;
+}
 
-export default class Skills extends React.Component<IProps, {}> {
+export class Skills extends React.Component<IProps, {}> {
   public render() {
     return (
       <div className={s.skills}>
-        <h1 className={s.title}>Skills</h1>
+        <h1 className={s.title}>{this.props.title}</h1>
         <div className={s.cards}>
           {languages.map(lang => {
             return (
@@ -41,3 +43,5 @@ export default class Skills extends React.Component<IProps, {}> {
     );
   }
 }
+
+export default Skills;

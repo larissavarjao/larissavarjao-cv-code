@@ -1,19 +1,30 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom';
 
 const Gmail = require('../../assets/img/header/gmail.svg');
 
 const s = require('./style.scss');
+const brazil = require('../../assets/img/languages/brazil.svg');
+const england = require('../../assets/img/languages/united-kingdom.svg');
 
 interface IProps {
-  changeLanguage?: (lang: 'portuguese' | 'english') => void;
+  title: string;
 }
 
-export default class Header extends React.Component<IProps, {}> {
+export class Header extends React.Component<IProps, {}> {
   public render() {
     return (
       <div className={s.header}>
         <div className={s.touch}>
-          <h3>Available to freelancer projects!</h3>
+          <h3>{this.props.title}</h3>
+        </div>
+        <div className={s.icons}>
+          <Link to="/pt">
+            <img src={brazil} />
+          </Link>
+          <Link to="/en">
+            <img src={england} />
+          </Link>
         </div>
         <div className={s.contact}>
           <img src={Gmail} />
@@ -23,3 +34,5 @@ export default class Header extends React.Component<IProps, {}> {
     );
   }
 }
+
+export default Header;
